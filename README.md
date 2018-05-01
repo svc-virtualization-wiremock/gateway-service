@@ -1,0 +1,2 @@
+# gateway-service - sample application to demonstrate service virtualization using WireMock
+[![Build Status](https://travis-ci.org/svc-virtualization-wiremock/gateway-service.png)](https://travis-ci.org/svc-virtualization-wiremock/gateway-service)
