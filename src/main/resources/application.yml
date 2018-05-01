@@ -1,0 +1,17 @@
+server:
+  port: 9080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: accounts_route
+          uri: http://accounts.myhost.com:9090
+          predicates:
+          - Path=/accounts/**
+          #- Path=/accounts/{segment}
+        - id: customers_route
+          uri: http://customers.myhost.com:9091
+          predicates:
+          - Path=/customers/**
+          #- Path=/customers/{segment}
